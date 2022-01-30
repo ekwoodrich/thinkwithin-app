@@ -3,11 +3,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAddressBook, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons'
+import { faAddressBook, faChevronCircleUp,faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
     <div>
+      
+      <div className="absolute top-5 w-full	">
+        <div className="flex items-center justify-center ">
+          <Link href="/tags">
+            <FontAwesomeIcon icon={faChevronCircleDown} />
+          </Link>
+        </div>
+      </div>
       <div className="flex items-center justify-center h-screen">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl font-bold font-lobster">
@@ -20,9 +29,12 @@ const Home: NextPage = () => {
           </textarea>
         </div>
       </div>
+
       <div className="absolute bottom-5 w-full	">
         <div className="flex items-center justify-center ">
-          <FontAwesomeIcon icon={faChevronCircleUp} />
+          <Link href="/list">
+            <FontAwesomeIcon icon={faChevronCircleUp} />
+          </Link>
         </div>
       </div>
     </div>
