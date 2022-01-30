@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import Document, { DocumentInitialProps, DocumentContext } from 'next/document';
 import { Html, Head, Main, NextScript } from 'next/document';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class MyDocument extends Document {
     // static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
