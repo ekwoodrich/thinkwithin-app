@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         </h1>
         <br/>
         <p className='font-opensans'>What are you thinking about?</p>
-        <textarea autoFocus className="mt-5 border-solid border-2 border-grey-500">
+        <textarea autoFocus className="mt-5 w-96	">
 
         </textarea>
         </div>
