@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'lobster': ['Lobster', 'cursive']
+        'lobster': ['Lobster', 'cursive'],
+        'opensans': ['Open Sans', 'sans-serif'],
       },
       colors: {
         'tw-orange':'#ed6b18'
