@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <div className="absolute top-5 w-full	">
         <div className="flex items-center justify-center ">
           <Link href="/tags">
-            <FontAwesomeIcon icon={faChevronCircleDown} />
+            <FontAwesomeIcon icon={faChevronCircleUp} />
           </Link>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       <div className="absolute bottom-5 w-full	">
         <div className="flex items-center justify-center ">
           <Link href="/list">
-            <FontAwesomeIcon icon={faChevronCircleUp} />
+            <FontAwesomeIcon icon={faChevronCircleDown} />
           </Link>
         </div>
       </div>
