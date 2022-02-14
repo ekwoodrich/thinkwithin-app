@@ -10,7 +10,6 @@ import Link from 'next/link'
 const Home: NextPage = () => {
   return (
     <div>
-      
       <div className="absolute top-5 w-full	">
         <div className="flex items-center justify-center ">
           <Link href="/tags">
@@ -18,6 +17,7 @@ const Home: NextPage = () => {
           </Link>
         </div>
       </div>
+
       <NoteInput />
 
       <div className="absolute bottom-5 w-full	">

@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useState } from 'react';
-
+import TagsInput from '../components/TagsInput';
 
 
 const NoteInput: FunctionComponent<{}> = () => {
@@ -13,9 +13,9 @@ const NoteInput: FunctionComponent<{}> = () => {
         <br />
         <p className='font-opensans'>What are you thinking about?
         </p>
-        <textarea autoFocus className="mt-5 w-96	">
+        <textarea autoFocus className="mt-5 w-96	outline outline-offset-2 outline-1">
         </textarea>
-        <input />
+        <TagsInput />
       </div>
     </div>
   </>
