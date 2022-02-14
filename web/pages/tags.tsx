@@ -12,7 +12,7 @@ const Tags: NextPage = () => {
             <div className="absolute bottom-5 w-full	">
                 <div className="flex items-center justify-center ">
                     <Link href="/">
-                        <FontAwesomeIcon icon={faChevronCircleUp} />
+                        <FontAwesomeIcon icon={faChevronCircleDown} />
                     </Link>
                 </div>
             </div>

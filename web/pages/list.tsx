@@ -12,7 +12,7 @@ const List: NextPage = () => {
             <div className="absolute top-5 w-full	">
                 <div className="flex items-center justify-center ">
                     <Link href="/">
-                        <FontAwesomeIcon icon={faChevronCircleDown} />
+                        <FontAwesomeIcon icon={faChevronCircleUp} />
                     </Link>
                 </div>
             </div>
