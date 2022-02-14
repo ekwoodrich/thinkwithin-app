@@ -8,19 +8,17 @@ interface Note {
   }
   
 interface NoteState {
-    Notes: Note[];
+    notes: Note[];
     addNote: (description: string) => void;
     removeNote: (id: string) => void;
   }
   
   export const useStore = create<NoteState>((set) => ({
-    // initial state
-    Notes: [],
-    // methods for manipulating state
+    notes: [],
     addNote: (description: string) => {
       set((state) => ({
-        Notes: [
-          ...state.Notes,
+        notes: [
+          ...state.notes,
           {
             id: uuidv4(),
             description,
@@ -31,12 +29,12 @@ interface NoteState {
     },
     removeNote: (id) => {
       set((state) => ({
-        Notes: state.Notes.filter((Note) => Note.id !== id),
+        notes: state.notes.filter((Note) => Note.id !== id),
       }));
     },
     toggleCompletedState: (id) => {
       set((state) => ({
-        Notes: state.Notes.map((Note) =>
+        notes: state.notes.map((Note) =>
           Note.id === id
             ? ({ ...Note, completed: !Note.completed } as Note)
             : Note
