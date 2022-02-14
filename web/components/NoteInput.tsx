@@ -16,6 +16,7 @@ const NoteInput: FunctionComponent<{}> = () => {
         <textarea autoFocus className="mt-5 w-96	outline outline-offset-2 outline-1">
         </textarea>
         <TagsInput />
+        <input type="button" value="Save" onClick={()=>{console.log('save')}} className="mt-5 pl-5 pr-5 outline outline-offset-2 outline-1"/>
       </div>
     </div>
   </>
